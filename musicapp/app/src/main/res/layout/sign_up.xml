@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".SignUpActivity">
+
+    <!-- Tiêu đề -->
+<TextView
+android:id="@+id/tvSignUpTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Tạo tài khoản mới"
+android:textColor="#FFFFFF"
+android:textSize="26sp"
+android:textStyle="bold"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="80dp"/>
+
+    <!-- Họ và Tên (Ví dụ) -->
+<EditText
+android:id="@+id/etFullNameSignUp"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Họ và Tên"
+android:inputType="textPersonName"
+android:background="@drawable/bg_edittext"
+    android:padding="14dp"
+    app:layout_constraintTop_toBottomOf="@id/tvSignUpTitle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginHorizontal="32dp"/>
+
+    <!-- Email -->
+<EditText
+android:id="@+id/etEmailSignUp"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Email"
+android:inputType="textEmailAddress"
+android:background="@drawable/bg_edittext"
+    android:padding="14dp"
+    app:layout_constraintTop_toBottomOf="@id/etFullNameSignUp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="32dp"/>
+
+    <!-- Password -->
+<EditText
+android:id="@+id/etPasswordSignUp"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Mật khẩu"
+android:inputType="textPassword"
+android:background="@drawable/bg_edittext"
+    android:padding="14dp"
+    app:layout_constraintTop_toBottomOf="@id/etEmailSignUp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="32dp"/>
+
+    <!-- Button Đăng ký -->
+<Button
+android:id="@+id/btnPerformSignUp"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:text="Đăng ký"
+android:textColor="#FFFFFF"
+android:background="@drawable/bg_button"
+    android:padding="14dp"
+    app:layout_constraintTop_toBottomOf="@id/etPasswordSignUp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginHorizontal="32dp"/>
+
+    <!-- Đã có tài khoản? Đăng nhập -->
+<TextView
+android:id="@+id/tvGoToSignIn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Đã có tài khoản? Đăng nhập ngay"
+android:textColor="#B0BEC5"
+android:textSize="14sp"
+app:layout_constraintTop_toBottomOf="@id/btnPerformSignUp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
